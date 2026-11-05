@@ -22,7 +22,6 @@ scanned image ──► 1. image-type classifier (keep photos) ──► 2. deno
 - **Models** (small CNNs, trained from scratch, 20 epochs, Adam, sparse categorical cross-entropy, batch size 16):
   - baseline: random horizontal flip → 3 × (Conv + MaxPooling) with 16, 32, 64 filters → Dense(80) → softmax;
   - same network with **Dropout (0.2)** before the dense layers (weights saved in `model_with_dropout.weights.h5`).
-- **Results:** `[fill in: validation accuracy of both models after evaluating on the held-out validation split]`
 
 ## 2. Image denoising
 
@@ -73,6 +72,4 @@ Beam search improved BLEU-3 and BLEU-4 for both models. Model 1 tends to produce
 - The denoising notebook expects the 148 photos in a `Dataset/` folder next to it (not included in this repository).
 - The captioning notebook downloads its data from HuggingFace; a GPU is recommended.
 
-## Authors
-
-`[Names of the group members]` — CESI École d'Ingénieurs, Data Science & AI, 2026.
+CESI École d'Ingénieurs, Data Science & AI, 2026.
